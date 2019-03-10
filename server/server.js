@@ -222,7 +222,7 @@ var commonService = {
                     value: !0
                 })])
             });
-            let signature = __M.require("douyin_falcon:node_modules/byted-acrawler/dist/runtime");
+            let signature = __M.require("douyin_falcon:node_modules/byted-acrawler/dist/runtime").sign(params[0]);
             console.log(signature);
             return commonResponse.success(signature);
         }
