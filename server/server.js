@@ -2,30 +2,7 @@
 !function(t) {
     if (t.__M = t.__M || {},
         !t.__M.require) {
-        var e, n, r = document.getElementsByTagName("head")[0], i = {}, o = {}, a = {}, u = {}, c = {}, s = {}, l = function(t, n) {
-            if (!(t in u)) {
-                u[t] = !0;
-                var i = document.createElement("script");
-                if (n) {
-                    var o = setTimeout(n, e.timeout);
-                    i.onerror = function() {
-                        clearTimeout(o),
-                            n()
-                    }
-                    ;
-                    var a = function() {
-                        clearTimeout(o)
-                    };
-                    "onload"in i ? i.onload = a : i.onreadystatechange = function() {
-                        ("loaded" === this.readyState || "complete" === this.readyState) && a()
-                    }
-                }
-                return i.type = "text/javascript",
-                    i.src = t,
-                    r.appendChild(i),
-                    i
-            }
-        }, f = function(t, e, n) {
+        var e, n, f = function(t, e, n) {
             var r = i[t] || (i[t] = []);
             r.push(e);
             var o, a = c[t] || c[t + ".js"] || {}, u = a.pkg;
@@ -109,18 +86,7 @@
             }
             ,
             e.loadCss = function(t) {
-                if (t.content) {
-                    var e = document.createElement("style");
-                    e.type = "text/css",
-                        e.styleSheet ? e.styleSheet.cssText = t.content : e.innerHTML = t.content,
-                        r.appendChild(e)
-                } else if (t.url) {
-                    var n = document.createElement("link");
-                    n.href = t.url,
-                        n.rel = "stylesheet",
-                        n.type = "text/css",
-                        r.appendChild(n)
-                }
+
             }
             ,
             e.alias = function(t) {
