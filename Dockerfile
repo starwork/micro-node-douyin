@@ -2,8 +2,6 @@ FROM node:alpine
 
 ADD package.json /dy/package.json
 
-ADD package-lock.json /dy/package-lock.json
-
 ADD server/ /dy/server
 
 RUN cd /dy && npm install
