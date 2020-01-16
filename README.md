@@ -9,6 +9,5 @@ npm install --unsafe-perm=true --allow-root --build-from-source
 ```
 
 canvas
-```
-https://www.npmjs.com/package/canvas
-```
+
+- [https://www.npmjs.com/package/canvas](https://www.npmjs.com/package/canvas)
